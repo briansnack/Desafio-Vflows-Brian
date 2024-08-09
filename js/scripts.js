@@ -173,6 +173,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const jsonData = JSON.stringify(fornecedorData, null, 2);
         console.log('Dados para envio:', jsonData);
+
+        formFornecedor.reset();
     });
 
     atualizarExclusaoProduto();
