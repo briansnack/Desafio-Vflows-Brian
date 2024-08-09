@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Fornecedor/Produto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="fluig-style-guide container">
+        <h2 class="text-center mt-4">Cadastro Fornecedor/Produto</h2>
+        <form id="form-fornecedor">
+            <div class="card">
+                <div class="card-header">Dados do Fornecedor</div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="razaoSocial">Razão Social</label>
+                            <input type="text" class="form-control" id="razaoSocial" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <div class="card mt-4">
+        <div class="card-header">Produtos</div>
+        <div class="card-body" id="produtos-section">
+            <div class="produto">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="produtoNome">Produto</label>
+                        <input type="text" class="form-control produto-nome" required>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger btn-remove-produto">Remover Produto</button>
+            </div>
+        </div>
+        <button type="button" class="btn btn-success" id="add-produto">Adicionar Produto</button>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header">Anexos</div>
+        <div class="card-body" id="anexos-section">
+            <div class="anexo">
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+                        <input type="file" class="form-control anexo-file" required>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <button type="button" class="btn btn-danger btn-remove-anexo">Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <button type="button" class="btn btn-success" id="add-anexo">Incluir Anexo</button>
+    </div>
+
+            <button type="submit" class="btn btn-primary mt-4">Salvar Fornecedor</button>
+        </form>
+    </div>
+
+</body>
+</html>
