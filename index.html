@@ -1,143 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Fornecedor/Produto</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro Fornecedor/Produto</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
 <body>
-    <div class="fluig-style-guide container">
-        <h2 class="text-center mt-4">Cadastro Fornecedor/Produto</h2>
+    <!-- Dados fornecedor -->
+    <div class="container mt-4">
+        <h2 class="text-center">Cadastro Fornecedor/Produto</h2>
         <form id="form-fornecedor">
             <div class="card">
                 <div class="card-header">Dados do Fornecedor</div>
                 <div class="card-body">
                     <div class="form-row">
                         <div class="form-group col-md-8">
-                                <label for="razaoSocial">Razão Social</label>
-                                <input type="text" class="form-control" id="razaoSocial" required>
-                            </div>
-
-                        <div class="form-group col-md-4">
-                                <label for="cnpj">CNPJ</label>
-                                <input type="text" class="form-control" id="cnpj" required>
-                            </div>
+                            <label for="razaoSocial">Razão Social</label>
+                            <input type="text" class="form-control" id="razaoSocial" required>
                         </div>
-
+                        <div class="form-group col-md-4">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" required>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-8">
-                                <label for="nomeFantasia">Nome Fantasia</label>
-                                <input type="text" class="form-control" id="nomeFantasia" required>
-                            </div>
-
-                        <div class="form-group col-md-4">
-                                <label for="inscricaoEstadual">Inscrição Estadual</label>
-                                <input type="text" class="form-control" id="inscricaoEstadual" required>
-                            </div>
+                            <label for="nomeFantasia">Nome Fantasia</label>
+                            <input type="text" class="form-control" id="nomeFantasia" required>
                         </div>
-
+                        <div class="form-group col-md-4">
+                            <label for="inscricaoEstadual">Inscrição Estadual</label>
+                            <input type="text" class="form-control" id="inscricaoEstadual">
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-5">
-                                <label for="cep">CEP</label>
-                                <input type="text" class="form-control" id="cep" required>
-                            </div>
-
-                    <div class="form-group col-md-3">  <!-- Espaço em branco -->
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep" required>
                         </div>
-
-                        <div div class="form-group col-md-4">
-                                <label for="inscricaoMunicipal">Inscrição Municipal</label>
-                                <input type="text" class="form-control" id="inscricaoMunicipal" required>
-                            </div>
-                        </div>
-
-                    <div class="form-row">
-                            <div class="form-group col-md-8">
-                                <label for="endereco">Endereço</label>
-                                <input type="text" class="form-control" id="endereco" required>
-                            </div>
-
+                        <div class="form-group col-md-3"></div>
                         <div class="form-group col-md-4">
-                                <label for="numero">Número</label>
-                                <input type="text" class="form-control" id="numero" required>
-                            </div>
+                            <label for="inscricaoMunicipal">Inscrição Municipal</label>
+                            <input type="text" class="form-control" id="inscricaoMunicipal">
                         </div>
-
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="numero">Número</label>
+                            <input type="text" class="form-control" id="numero" required>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                                <label for="complemento">Complemento</label>
-                                <input type="text" class="form-control" id="complemento" required>
-                            </div>
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
                         </div>
-
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-4">
-                                <label for="bairro">Bairro</label>
-                                <input type="text" class="form-control" id="bairro" required>
-                            </div>
-
-                        <div class="form-group col-md-4">
-                                <label for="municipio">Município</label>
-                                <input type="text" class="form-control" id="municipio" required>
-                            </div>
-
-                        <div class="form-group col-md-4">
-                                <label for="estado">Estado</label>
-                                <input type="text" class="form-control" id="estado" required>
-                            </div>
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" required>
                         </div>
-
+                        <div class="form-group col-md-4">
+                            <label for="municipio">Município</label>
+                            <input type="text" class="form-control" id="municipio" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="estado">Estado</label>
+                            <input type="text" class="form-control" id="estado" required>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                                <label for="nomePessoaContato">Nome da Pessoa de Contato</label>
-                                <input type="text" class="form-control" id="nomePessoaContato" required>
-                            </div>
-
+                            <label for="nomePessoaContato">Nome da Pessoa de Contato</label>
+                            <input type="text" class="form-control" id="nomePessoaContato" required>
+                        </div>
                         <div class="form-group col-md-3">
-                                <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control" id="telefone" required>
-                            </div>
-
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" required>
+                        </div>
                         <div class="form-group col-md-3">
-                                <label label for="email">E-mail</label>
-                                <input type="text" class="form-control" id="email" required>
-                            </div>
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
                         </div>
                     </div>
                 </div>
-
-            <div class="card mt-4">
-                <div class="card-header">Produtos</div>
-                <div class="card-body" id="produtos-section">
-                    <div class="produto">
-                        <div class="form-row">
-                            <div class="form-group col-md-3">
-                                <label for="produtoNome">Produto</label>
-                                <input type="text" class="form-control produto-nome" required>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-danger btn-remove-produto">Remover Produto</button>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-success" id="add-produto">Adicionar Produto</button>
             </div>
 
+            <!-- Cadastro Produtos -->
+            <div id="produtos-section">
+                <div class="card-header">Produtos</div>
+                <div class="produto" id="produto-1">
+                    <h4>Produto - 1</h4>
+                    <button type="button" class="btn btn-danger btn-remove-produto">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                    <div>
+                        <input type="text" class="form-control produto-nome" placeholder="Descrição do Produto" required>
+                    </div>
+                    <div>
+                        <select class="form-control produto-unidade-medida" required>
+                            <option value="" disabled selected>UND. Medida</option>
+                            <option value="kg">Kg</option>
+                            <option value="un">Unidade</option>
+                        </select>
+                        <input type="number" class="form-control produto-qtde" placeholder="Quantidade em Estoque" required>
+                        <input type="number" class="form-control produto-valor-unitario" placeholder="Valor Unitário" required>
+                        <input type="text" class="form-control produto-valor-total" placeholder="Valor Total" readonly>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" id="add-produto" class="btn btn-success">Adicionar Produto</button>
+
+            <!-- Cadastro arquivos -->
             <div class="card mt-4">
                 <div class="card-header">Anexos</div>
                 <div class="card-body" id="anexos-section">
-                    <div class="anexo">
-                        <div class="form-row">
-                            <div class="form-group col-md-10">
-                                <input type="file" class="form-control anexo-file" required>
-                            </div>
-                            <div class="form-group col-md-2">
-                                <button type="button" class="btn btn-danger btn-remove-anexo">Excluir</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <button type="button" class="btn btn-success" id="add-anexo">Incluir Anexo</button>
             </div>
@@ -145,5 +132,8 @@
             <button type="submit" class="btn btn-primary mt-4">Salvar Fornecedor</button>
         </form>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
