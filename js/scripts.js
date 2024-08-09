@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const buscarCepBtn = document.getElementById('buscar-cep');
     const cepInput = document.getElementById('cep');
     const enderecoInput = document.getElementById('endereco');
     const bairroInput = document.getElementById('bairro');
     const municipioInput = document.getElementById('municipio');
     const estadoInput = document.getElementById('estado');
 
-    buscarCepBtn.addEventListener('click', async () => {
-        const cep = cepInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
-        if (cep.length === 8) { // Verifica se o CEP tem 8 dígitos
+    cepInput.addEventListener('blur', async () => { 
+        const cep = cepInput.value.replace(/\D/g, ''); 
+        if (cep.length === 8) { 
             try {
                 const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
                 const data = await response.json();

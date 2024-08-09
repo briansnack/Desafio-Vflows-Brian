@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro Fornecedor/Produto</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
-        <link href="css/styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Fornecedor/Produto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 <body>
     <!-- Dados fornecedor -->
     <div class="container mt-4">
@@ -42,7 +42,9 @@
                             <label for="cep">CEP</label>
                             <input type="text" class="form-control" id="cep" required>
                         </div>
-                        <div class="form-group col-md-3"></div>
+                        <div class="form-group col-md-3">
+                            <button type="button" id="buscar-cep" class="btn btn-primary mt-4">Buscar CEP</button>
+                        </div>
                         <div class="form-group col-md-4">
                             <label for="inscricaoMunicipal">Inscrição Municipal</label>
                             <input type="text" class="form-control" id="inscricaoMunicipal">
