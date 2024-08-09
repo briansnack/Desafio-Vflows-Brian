@@ -7,3 +7,34 @@ body {
 #form-fornecedor .form-group label {
     font-weight: bold;
 }
+label {
+    font-size: 14px; 
+    font-weight: bold; 
+}
+
+.card-header {
+    background-color: #0082b5; 
+    color: white; 
+    font-weight: bold; 
+}
+
+.form-control {
+    height: calc(1.5em + .75rem + 2px); 
+}
+
+.btn {
+    font-size: 14px; 
+    padding: 10px 20px; 
+}
+
+.btn-danger {
+    background-color: #f44336; 
+}
+
+.btn-success {
+    background-color: #4caf50; 
+}
+
+input[type="file"] {
+    border-radius: 4px; 
+}

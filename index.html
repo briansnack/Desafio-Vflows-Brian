@@ -16,63 +16,88 @@
                 <div class="card-header">Dados do Fornecedor</div>
                 <div class="card-body">
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-8">
                             <label for="razaoSocial">Razão Social</label>
                             <input type="text" class="form-control" id="razaoSocial" required>
                         </div>
-                        <div class="form-group col-md-6">
+
+                        <div class="form-group col-md-4">
                             <label for="cnpj">CNPJ</label>
                             <input type="text" class="form-control" id="cnpj" required>
                         </div>
-                        <div class="form-group col-md-6">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
                             <label for="nomeFantasia">Nome Fantasia</label>
                             <input type="text" class="form-control" id="nomeFantasia" required>
                         </div>
-                        <div class="form-group col-md-6">
+
+                        <div class="form-group col-md-4">
                             <label for="inscricaoEstadual">Inscrição Estadual</label>
                             <input type="text" class="form-control" id="inscricaoEstadual" required>
                         </div>
-                        <div class="form-group col-md-6">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
                             <label for="cep">CEP</label>
                             <input type="text" class="form-control" id="cep" required>
                         </div>
-                        <div class="form-group col-md-6">
+
+                        <div class="form-group col-md-3">
+                        </div>
+
+                        <div class="form-group col-md-4">
                             <label for="inscricaoMunicipal">Inscrição Municipal</label>
                             <input type="text" class="form-control" id="inscricaoMunicipal" required>
                         </div>
-                        <div class="form-group col-md-6">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
                             <label for="endereco">Endereço</label>
                             <input type="text" class="form-control" id="endereco" required>
                         </div>
-                        <div class="form-group col-md-6">
+
+                        <div class="form-group col-md-4">
                             <label for="numero">Número</label>
                             <input type="text" class="form-control" id="numero" required>
                         </div>
-                        <div class="form-group col-md-6">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
                             <label for="complemento">Complemento</label>
                             <input type="text" class="form-control" id="complemento" required>
                         </div>
-                        <div class="form-group col-md-6">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
                             <label for="bairro">Bairro</label>
                             <input type="text" class="form-control" id="bairro" required>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label for="municipio">Municipio</label>
+                        <div class="form-group col-md-4">
+                            <label for="municipio">Município</label>
                             <input type="text" class="form-control" id="municipio" required>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="estado">Estado</label>
                             <input type="text" class="form-control" id="estado" required>
                         </div>
+                    </div>
+
+                    <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="nomePessoaContato">Nome da Pessoa de Contato</label>
                             <input type="text" class="form-control" id="nomePessoaContato" required>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-3">
                             <label for="telefone">Telefone</label>
                             <input type="text" class="form-control" id="telefone" required>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-3">
                             <label for="email">E-mail</label>
                             <input type="text" class="form-control" id="email" required>
                         </div>
@@ -80,42 +105,41 @@
                 </div>
             </div>
 
-    <div class="card mt-4">
-        <div class="card-header">Produtos</div>
-        <div class="card-body" id="produtos-section">
-            <div class="produto">
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="produtoNome">Produto</label>
-                        <input type="text" class="form-control produto-nome" required>
+            <div class="card mt-4">
+                <div class="card-header">Produtos</div>
+                <div class="card-body" id="produtos-section">
+                    <div class="produto">
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="produtoNome">Produto</label>
+                                <input type="text" class="form-control produto-nome" required>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-danger btn-remove-produto">Remover Produto</button>
                     </div>
                 </div>
-                <button type="button" class="btn btn-danger btn-remove-produto">Remover Produto</button>
+                <button type="button" class="btn btn-success" id="add-produto">Adicionar Produto</button>
             </div>
-        </div>
-        <button type="button" class="btn btn-success" id="add-produto">Adicionar Produto</button>
-    </div>
 
-    <div class="card mt-4">
-        <div class="card-header">Anexos</div>
-        <div class="card-body" id="anexos-section">
-            <div class="anexo">
-                <div class="form-row">
-                    <div class="form-group col-md-10">
-                        <input type="file" class="form-control anexo-file" required>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <button type="button" class="btn btn-danger btn-remove-anexo">Excluir</button>
+            <div class="card mt-4">
+                <div class="card-header">Anexos</div>
+                <div class="card-body" id="anexos-section">
+                    <div class="anexo">
+                        <div class="form-row">
+                            <div class="form-group col-md-10">
+                                <input type="file" class="form-control anexo-file" required>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <button type="button" class="btn btn-danger btn-remove-anexo">Excluir</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button type="button" class="btn btn-success" id="add-anexo">Incluir Anexo</button>
             </div>
-        </div>
-            <button type="button" class="btn btn-success" id="add-anexo">Incluir Anexo</button>
-    </div>
 
             <button type="submit" class="btn btn-primary mt-4">Salvar Fornecedor</button>
         </form>
     </div>
-
 </body>
 </html>
